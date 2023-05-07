@@ -1,0 +1,193 @@
+
+*{
+    box-sizing: border-box;
+   
+}
+
+body{
+    max-width: 1440px;
+    font-family: "Epilogue"; 
+    font-size: 18px;
+    background: hsl(0, 0%, 98%);
+
+}
+
+h1{
+    font-weight: 700;
+    font-size: 4.5rem;
+    margin-top: 40px;
+}
+
+/*NavBar*/
+.navbar-brand{
+    margin: 10px 40px;
+}
+
+.navbar-nav li{
+    padding-right: 30px;
+}
+
+.right-end ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.right-end ul li{
+    padding-right: 30px;
+}
+
+/*Main-section*/
+
+.show-cass .container{
+    display: flex;
+    height: 90vh;
+}
+
+.left-side{
+    line-height: 2;
+    padding: 30px 60px 0 0px;
+    margin-left: 50px;
+}
+
+p{
+    margin: 45px auto;
+}
+
+.btn{
+    margin: auto auto 50px;
+    width: 150px;
+}
+
+.nav-bar-nav button{
+    border-color: rgb(61, 61, 61);
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 5px 15px;
+}
+
+.nav-bar-nav button a{
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu{
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+
+}
+
+.dropdown-menu li{
+    padding-right: 0;
+}
+.support-img{
+    padding-right: 30px;
+}
+
+.image{
+    background-image: url("images/image-hero-desktop.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    
+    
+}
+
+.navbar-toggler-icon{
+    color:hsl(228, 45%, 44%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*nav toggle*/
+
+@media (max-width:647px){
+    #navbarSupportedContent{
+        height: 1000px;
+        position: absolute;
+        top: 0px;
+        width: 60%;
+        background-color: hsl(0, 0%, 98%);
+        right: 0;
+        padding: 40px 20px;
+        color: black;
+        z-index: 1;
+    }
+    
+    .navbar-toggler{
+        position: absolute;
+        right: 10px;
+        z-index: 2;
+    }
+
+    .dropdown-menu{
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: none;
+    }
+
+    .dropdown-item{
+        margin: 5px auto 15px;
+    }
+
+    .dropdown-menu img{
+        padding-right: 10px;
+    }
+
+    .right-end ul{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: hsl(0, 0%, 41%);
+    }
+
+    .right-end ul li{
+        margin: 10px auto 20px;
+
+    }
+
+    .right-end ul button{
+        width: 200px;
+    }
+
+    /*Section*/
+    .show-cass .container{
+        display: grid;
+        grid-template-columns: repeat(1fr, 2);
+        height: 180vh;
+        position: relative;
+
+    }
+
+    .image{
+        background-image: url("images/image-hero-mobile.png");
+        width: 100%;
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        margin-top: 30px;
+
+    }
+
+    .left-side{
+        line-height: 1.5;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+
+    #support-gallery img{
+        padding-right: 5px;
+    }
+        
+        
+
+}
